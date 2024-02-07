@@ -262,7 +262,7 @@ namespace RC::UVTD
         case PDB::CodeView::TPI::TypeRecordKind::LF_BITFIELD:
             return get_type_name(tpi_stream, record->data.LF_BITFIELD.type, check_valid);
         default:
-            __debugbreak();
+           // __debugbreak();
             return STR("<UNKNOWN TYPE>");
         }
     }

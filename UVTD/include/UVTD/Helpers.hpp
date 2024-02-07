@@ -71,6 +71,8 @@ namespace RC::UVTD
                                                          {STR("FConsoleVariableBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},
                                                          {STR("FConsoleCommandBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},*/
 
+                                                         {STR("FFieldClass"), ValidForVTable::No, ValidForMemberVars::Yes},
+                                                         {STR("FFieldVariant"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("UScriptStruct"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("UWorld"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("UFunction"), ValidForVTable::No, ValidForMemberVars::Yes},
@@ -103,7 +105,8 @@ namespace RC::UVTD
                                                          {STR("FUObjectArray"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("FChunkedFixedUObjectArray"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("FFixedUObjectArray"), ValidForVTable::No, ValidForMemberVars::Yes},
-                                                         {STR("FUObjectItem"), ValidForVTable::No, ValidForMemberVars::Yes}};
+                                                         {STR("FUObjectItem"), ValidForVTable::No, ValidForMemberVars::Yes}
+                                                };
 
     static inline std::unordered_map<File::StringType, std::unordered_set<File::StringType>> s_private_variables{
             {STR("FField"),
