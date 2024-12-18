@@ -66,12 +66,12 @@ namespace RC::UVTD
                                                          {STR("FObjectPropertyBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},
                                                          {STR("UObjectPropertyBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},
                                                          {STR("FWorldContext"), ValidForVTable::No, ValidForMemberVars::Yes},
-                                                         /*{STR("FConsoleManager"), ValidForVTable::Yes, ValidForMemberVars::Yes},
+														 {STR("IConsoleObject"), ValidForVTable::Yes, ValidForMemberVars::Yes},
+                                                         {STR("FConsoleManager"), ValidForVTable::Yes, ValidForMemberVars::Yes},
                                                          {STR("UDataTable"), ValidForVTable::Yes, ValidForMemberVars::Yes},
                                                          {STR("FConsoleVariableBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},
-                                                         {STR("FConsoleCommandBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},*/
-
-                                                         {STR("FFieldClass"), ValidForVTable::No, ValidForMemberVars::Yes},
+                                                         {STR("FConsoleCommandBase"), ValidForVTable::Yes, ValidForMemberVars::Yes},
+		                                                 {STR("FFieldClass"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("FFieldVariant"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("UScriptStruct"), ValidForVTable::No, ValidForMemberVars::Yes},
                                                          {STR("UWorld"), ValidForVTable::No, ValidForMemberVars::Yes},
